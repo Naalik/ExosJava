@@ -19,9 +19,9 @@ public class Collections {
         liste.add("saucisse");
         liste.add("roti");
         for (String elemAct : liste) {
-            System.out.println(elemAct);
+            System.out.println(elemAct+" "+liste.indexOf(elemAct));
         }
-        System.out.println(liste+" "+liste.size());
+        System.out.println(liste+" "+liste.indexOf(args)+" "+liste.size());
         liste.remove("roti");
         System.out.println(liste+" "+liste.size());
         
