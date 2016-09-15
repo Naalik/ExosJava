@@ -67,6 +67,7 @@ public class MathUtil {
             min = max;
             max = temp;
         }
+
         double nombreSecretD;
         int alea = 0;
         do {
