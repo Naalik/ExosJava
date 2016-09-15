@@ -13,18 +13,21 @@ import java.util.ArrayList;
  */
 public class Collections {
     public static void main(String[] args) {
-        ArrayList<String> liste = new ArrayList<String>();
-        liste.add("paupiette");
-        liste.add("jambon");
-        liste.add("saucisse");
-        liste.add("roti");
-        for (String elemAct : liste) {
-            System.out.println(elemAct+" "+liste.indexOf(elemAct));
+        ArrayList<Integer> liste1 = new ArrayList<Integer>();
+        ArrayList<Integer> liste2 = new ArrayList<Integer>();
+        ArrayList<Integer> liste3 = new ArrayList<Integer>();
+        for (int i=1;i<11;i++){
+            liste1.add(i*10);
         }
-        System.out.println(liste+" "+liste.indexOf(args)+" "+liste.size());
-        liste.remove("roti");
-        System.out.println(liste+" "+liste.size());
+        for (int i=1;i<51;i++){
+            liste2.add(i*2);
+        }
+        for (int i=1;i<34;i++){
+            liste3.add(i*3);
+        }
+        liste2.removeAll(liste1);
+        liste2.removeAll(liste3);
+        System.out.println(liste2+" - Nombre d'éléments : "+ liste2.size());
         
     }
-    
 }
