@@ -28,6 +28,5 @@ public class Collections {
         liste2.removeAll(liste1);
         liste2.removeAll(liste3);
         System.out.println(liste2+" - Nombre d'éléments : "+ liste2.size());
-        
     }
 }
