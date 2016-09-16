@@ -13,13 +13,13 @@ import test1.util.MathUtil;
  *
  * @author admin
  */
-public class JeuPaires {
+public class JeuMemory {
 
     public static void main(String[] args) throws IOException {
-        int n = JeuPaires.moulinetteSaisie();
-        char[][] plateauVisible = JeuPaires.generePlateauVisible(n);
-        char[][] plateauReponse = JeuPaires.genererPlateauReponse(n);
-        JeuPaires.afficherPlateau(plateauVisible);
+        int n = JeuMemory.moulinetteSaisie();
+        char[][] plateauVisible = JeuMemory.generePlateauVisible(n);
+        char[][] plateauReponse = JeuMemory.genererPlateauReponse(n);
+        JeuMemory.afficherPlateau(plateauVisible);
         //System.out.println(plateau.length);
         //System.out.println(taillePlateau);
     }

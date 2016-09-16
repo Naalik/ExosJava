@@ -14,9 +14,9 @@ import java.util.ArrayList;
 public class Collections {
     public static void main(String[] args) {
         // 3 ArrayList ont été créées
-        ArrayList<Integer> liste1 = new ArrayList<Integer>();
-        ArrayList<Integer> liste2 = new ArrayList<Integer>();
-        ArrayList<Integer> liste3 = new ArrayList<Integer>();
+        ArrayList<Integer> liste1 = new ArrayList<>();
+        ArrayList<Integer> liste2 = new ArrayList<>();
+        ArrayList<Integer> liste3 = new ArrayList<>();
         //une avec les multiples de 10 jusqu'à 100
         for (int i=1;i<11;i++){
             liste1.add(i*10);
