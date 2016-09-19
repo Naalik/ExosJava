@@ -21,6 +21,7 @@ public class FilmTest {
 
         System.out.println(film1);
         System.out.println(film2);
+        System.out.println(Film.getNbObjets());
     }
 
 }

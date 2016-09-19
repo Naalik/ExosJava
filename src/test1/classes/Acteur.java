@@ -12,6 +12,11 @@ package test1.classes;
 public class Acteur {
     private String nom;
     private String prenom;
+    private static int nbObjets = 0;
+    
+    public static int getNbObjets() {
+        return nbObjets;
+    }
 
     public String getNom() {
         return nom;

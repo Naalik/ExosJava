@@ -15,12 +15,18 @@ public class Film {
     private Integer duree;//en minutes
     private String synopsis;
     private Integer annee;
+    private static int nbObjets = 0;
 
     public Film(String titre, Integer duree, String synopsis, Integer annee) {
         this.titre = titre;
         this.duree = duree;
         this.synopsis = synopsis;
         this.annee = annee;
+        nbObjets++;
+    }
+    
+    public static int getNbObjets() {
+        return nbObjets;
     }
 
     @Override //surcharge de la méthode .toString de la classe Object pour modifier son comportement

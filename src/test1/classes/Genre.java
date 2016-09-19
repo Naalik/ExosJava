@@ -11,6 +11,11 @@ package test1.classes;
  */
 public class Genre {
     private String genre;
+    private static int nbObjets = 0;
+    
+    public static int getNbObjets() {
+        return nbObjets;
+    }
 
     public String getGenre() {
         return genre;
