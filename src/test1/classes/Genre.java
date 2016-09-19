@@ -12,6 +12,11 @@ package test1.classes;
 public class Genre {
     private String genre;
     private static int nbObjets = 0;
+
+    public Genre(String genre) {
+        this.genre = genre;
+        nbObjets++;
+    }
     
     public static int getNbObjets() {
         return nbObjets;

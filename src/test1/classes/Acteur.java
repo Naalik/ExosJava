@@ -13,6 +13,13 @@ public class Acteur {
     private String nom;
     private String prenom;
     private static int nbObjets = 0;
+
+    public Acteur(String nom, String prenom) {
+        this.nom = nom;
+        this.prenom = prenom;
+        nbObjets++;
+    }
+    
     
     public static int getNbObjets() {
         return nbObjets;

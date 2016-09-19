@@ -32,8 +32,8 @@ public class Film {
     @Override //surcharge de la méthode .toString de la classe Object pour modifier son comportement
     //Ici, on modifie le format de sortie de .toString
     public String toString() {
-        //return titre + " " + duree + "mn \"" + synopsis + "\" " + annee;
-        return titre + " \"" + synopsis + "\" ";
+        return titre + " " + duree + "mn \"" + synopsis + "\" " + annee;
+        //return titre + " \"" + synopsis + "\" ";
     }
     public String getTitre() {
         return titre;
