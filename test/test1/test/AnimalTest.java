@@ -5,9 +5,12 @@
  */
 package test1.test;
 
+import java.util.ArrayList;
 import org.junit.Test;
 import test1.classes.Animal;
 import test1.classes.Poisson;
+import test1.classes.Serpent;
+import test1.classes.Tortue;
 
 /**
  *
@@ -17,8 +20,19 @@ public class AnimalTest {
 
     @Test
     public void animalTest() {
-        Animal animal1 = new Poisson("Jojo");
-        animal1.manger();
+        Animal poisson = new Poisson("Jojo");
+        Animal serpent = new Serpent("Juju");
+        Animal tortue = new Tortue("Jiji");
+        ArrayList<Animal> animaux = new ArrayList<>();
+        animaux.add(poisson);
+        animaux.add(serpent);
+        animaux.add(tortue);
+
+        for (Animal animal : animaux) {
+            animal.manger();
+            animal.bouger();
+
+        }
     }
 
 }

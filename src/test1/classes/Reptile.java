@@ -9,6 +9,6 @@ package test1.classes;
  *
  * @author admin
  */
-public abstract class Reptile {
+public abstract class Reptile extends Animal {
 
 }

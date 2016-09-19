@@ -9,22 +9,23 @@ package test1.classes;
  *
  * @author admin
  */
-public class Poisson extends Animal {
-
+public class Tortue extends Reptile {
+    
     private String nom;
 
-    public Poisson(String nom) {
+    public Tortue(String nom) {
         this.nom = nom;
     }
+    
 
     @Override
     public void manger() {
-        System.out.println(this.nom + " gloups.");
+        System.out.println(this.nom + " croque.");
     }
 
     @Override
     public void bouger() {
         System.out.println(this.nom + " plouf.");
     }
-
+    
 }
