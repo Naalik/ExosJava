@@ -27,5 +27,10 @@ public class Serpent extends Reptile {
     public void bouger() {
         System.out.println(this.nom + " rolls.");
     }
+
+    @Override
+    public void sleep() {
+        System.out.println(this.nom + " ronfle.");
+    }
     
 }

@@ -31,7 +31,7 @@ public class AnimalTest {
         for (Animal animal : animaux) {
             animal.manger();
             animal.bouger();
-
+            animal.sleep();
         }
     }
 

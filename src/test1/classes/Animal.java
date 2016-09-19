@@ -9,7 +9,7 @@ package test1.classes;
  *
  * @author admin
  */
-public abstract class Animal {
+public abstract class Animal implements Sleepable {
 
     private String nom;
 
