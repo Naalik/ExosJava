@@ -10,6 +10,7 @@ package test1.classes;
  * @author admin
  */
 public class Film {
+
     private String titre;
     private Integer duree;//en minutes
     private String synopsis;
@@ -22,11 +23,12 @@ public class Film {
         this.annee = annee;
     }
 
-    @Override //surcharge de la méthode .toString de la classe Object
+    @Override //surcharge de la méthode .toString de la classe Object pour modifier son comportement
+    //Ici, on modifie le format de sortie de .toString
     public String toString() {
-        return titre + " " + duree + "mn \"" + synopsis + "\" " + annee;
+        //return titre + " " + duree + "mn \"" + synopsis + "\" " + annee;
+        return titre + " \"" + synopsis + "\" ";
     }
-
     public String getTitre() {
         return titre;
     }
@@ -58,7 +60,5 @@ public class Film {
     public void setAnnee(Integer annee) {
         this.annee = annee;
     }
-    
-    
-    
+
 }

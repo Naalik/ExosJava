@@ -6,7 +6,6 @@
 package test1.test;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
 import test1.classes.Film;
 
 /**
@@ -17,8 +16,8 @@ public class FilmTest {
 
     @Test
     public void test1() {
-        Film film1 = new Film("Dracula", 120, "blabla", 1990);
-        Film film2 = new Film("Pulp Fiction", 120, "blabla", 1990);
+        Film film1 = new Film("Dracula", 110, "blabla", 1990);
+        Film film2 = new Film("Pulp Fiction", 120, "bloblo", 1991);
 
         System.out.println(film1);
         System.out.println(film2);
